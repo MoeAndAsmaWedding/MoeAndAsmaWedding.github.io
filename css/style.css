@@ -957,7 +957,7 @@
 /* Banner */
 
 	#banner {
-		background: url("images/overlay.png"), url("../images/ajia.jpg");
+		background: url("images/overlay.png"), url("../images/ajia.jpeg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
