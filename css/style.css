@@ -1000,12 +1000,12 @@
 	}
 
 		.wrapper.style1 {
-			background-color: #e600ac;
-			-moz-background-image: linear-gradient(60deg, #e600ac 50%, #e600ac 50%);
-			-webkit-background-image: linear-gradient(60deg, #e600ac 50%, #e600ac 50%);
-			-o-background-image: linear-gradient(60deg, #e600ac 50%, #e600ac 50%);
-			-ms-background-image: linear-gradient(60deg, #e600ac 50%, #e600ac 50%);
-			background-image: linear-gradient(60deg, #e600ac 50%, #e600ac 50%);
+			background-color: #ff66d9;
+			-moz-background-image: linear-gradient(60deg, #ff66d9 50%, #e600ac 50%);
+			-webkit-background-image: linear-gradient(60deg, #ff66d9 50%, #e600ac 50%);
+			-o-background-image: linear-gradient(60deg, #ff66d9 50%, #e600ac 50%);
+			-ms-background-image: linear-gradient(60deg, #ff66d9 50%, #e600ac 50%);
+			background-image: linear-gradient(60deg, #ff66d9 50%, #e600ac 50%);
 			color: #ffffff;
 		}
 
