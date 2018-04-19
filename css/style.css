@@ -937,7 +937,7 @@
 						line-height: 2.25em;
 						margin-bottom: 0;
 						padding: 0 1em;
-						position: relative;
+						position: fixed;
 						top: -0.075em;
 						vertical-align: middle;
 					}
