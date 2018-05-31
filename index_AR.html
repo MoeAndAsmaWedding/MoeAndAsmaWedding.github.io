@@ -27,14 +27,15 @@
 
 		<!-- Header -->
 			<header id="header">
+				<!--
 				<a href="index.html" class="button alt">English</a>
+			-->
 				<nav id="nav">
 					<ul>
-						<li><a href="#Salons">الصالونات</a></li>
 						<li><a href="#Accommodations">السكن</a></li>
 						<li><a href="#MapLocation">الموقع</a></li>
 						<li><a href="#Details">التفاصيل</a></li>
-						<li><a href="index.html">البداية</a></li>
+						<li><a href="index_AR.html">البداية</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -45,7 +46,12 @@
 				<p>نتشرف و يسعدنا حضوركم</p>
 				<ul class="actions">
 					<li>
-						<a href="index.html" class="button button-primary button-sm button-responsive">English</a>
+						<p></p>
+					</li>
+				</ul>
+				<ul class="actions">
+					<li>
+						<a href="index.html" class="button button-primary">English</a>
 					</li>
 				</ul>
 			</section>
@@ -74,19 +80,101 @@
 				</div>
 			</section>
 			<br>
+
+			<!-- Ceremony -->
+			<!--
+			<section id="Ceremony" class="wrapper align-center">
+				<div class="container">
+					<header>
+						<h2>This is just a start ... I can change, add or delete anything.</h2>
+						<p>Just give a me a drawing and don't restrict yourself to this look. I can reshape</p>
+					</header>
+					<div class="row 200%">
+						<section class="4u 22u$(small)">
+							<a><img src="images/ceremony.jpg" width="100%" height="auto"></a>
+							<p>الاستقبال</p>
+						</section>
+						<section class="4u 22u$(small)">
+							<a><img src="images/dinner.jpg" width="100%" height="auto"></a>
+							<p>العشاء</p>
+						</section>
+						<section class="4u$ 22u$(small)">
+							<a><img src="images/dinner2.jpg" width="100%" height="auto"></a>
+							<p>الرقص</p>
+						</section>
+					</div>
+				</div>
+			</section>
+		-->
+
 		<!-- Map -->
+
+		<section id="MapLocation" class="wrapper align-center">
+			<div class="container">
+				<div class="row">
+					<section class="6u 12u$(small)">
+						<h2>الحفلة</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cumque!</p>
+						<img src="images/hotel.jpg" width="100%" height="auto">
+					</section>
+					<section class="6u 12u$(small)">
+						<h2>الموقع</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cumque!</p>
+								<div id="map"></div>
+									<script>
+									function initMap() {
+										var ajia = {lat: 41.1031317, lng: 29.066867199999933};
+										var map = new google.maps.Map(document.getElementById('map'), {
+											zoom: 12,
+											center: ajia
+										});
+										var marker = new google.maps.Marker({
+											position: ajia,
+											map: map
+										});
+									}
+									</script>
+						<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzBMn9j2IDjwb6hWgwvs931Nn34xNFLSY&callback=initMap">
+						</script>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<style class="wrapper">
+				#map {
+					height: 100%;
+					width: 100%;
+					background-color: grey;
+					margin-left: 10px;
+					margin-right: 10px;
+					overflow: hidden;
+					padding-bottom: 62%;
+					padding-top: 10px;
+					padding-left: 10px;
+					padding-right: 10px;
+					position: relative;
+				}
+			</style>
+		</section>
+
 
 		<!--
 		<section>
-	    <style>
-	      #map {
-	        width: 100%;
-	        height: 500px;
-	        background-color: grey;
-					margin-left: 10px;
-					margin-right: 10px;
-	      }
-	    </style>
+		<style class="wrapper">
+			#map {
+				height: 0;
+				width: 100%;
+				background-color: grey;
+				margin-left: auto;
+				margin-right: auto;
+				overflow: hidden;
+				padding-bottom: 22.25%;
+				padding-top: 30px;
+				position: relative;
+			}
 	  </section>
 	  <section id="MapLocation" class="align-center">
 	    <h2>الموقع</h2>
@@ -108,21 +196,57 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzBMn9j2IDjwb6hWgwvs931Nn34xNFLSY&callback=initMap">
     </script>
 	</section>
+
+<!-
+<section id="MapLocation" class="wrapper align-center">
+	<div class="container">
+		<div class="row">
+			<section class="6u 12u$(small)">
+				<h2>Ceremony</h2>
+			</section>
+			<section class="6u 12u$(small)">
+				<h2>الموقع</h2>
+				<a href="https://goo.gl/maps/mwea2ZBF81K2"><img src="images/map.png" width="90%" height="auto"></a>
+			</section>
+		</div>
+	</div>
+</section>
 -->
 
+	<!-- Accommodations -->
+		<section id="Accommodations" class="wrapper style2 align-center">
+			<div class="container">
+				<header>
+					<h2>الفنادق</h2>
+					<p>استمتعوا باسعار خاصة للفنادق التالية</p>
+				</header>
+				<div class="row 200%">
+					<section class="4u 12u$(small)">
+						<h3>فندق كونراد</h3>
+						<a href="http://conradhotels3.hilton.com/en/hotels/turkey/conrad-istanbul-bosphorus-ISTHCCI/index.html"><img src="images/conrad.jpg" width="100%" height="auto"></a>
+					</section>
+					<section class="4u 12u$(small)">
+						<h3>فندق الميريديان</h3>
+						<a href="http://www.lemeridienistanbuletiler.com"><img src="images/lemeridien.jpg" width="100%" height="auto"></a>
+					</section>
+					<section class="4u$ 12u$(small)">
+						<h3>فندق قراند طرابيا</h3>
+						<a href="https://www.thegrandtarabya.com/en/"><img src="images/tarabya.jpg" width="100%" height="auto"></a>
+					</section>
+				</div>
+				<ul style="list-style-type: none;">
+					<li class="contact">
+						<h3 class="title"></h3>
+						<i class="icon big rounded fa-envelope-o"></i>
+						<h3>للإستفسار و المساعدة في الحجوزات الرجاء مراسلة </h3>
+						<h3><a href="mailto:contact@kmevents.com.tr">contact@kmevents.com.tr</a></h3>
+					</li>
+				</ul>
+				</div>
 
-	<section id="MapLocation" class="wrapper style2 align-center">
-		<div class="container">
-			<ul style="list-style-type: none;">
-				<li class="actions">
-					<h2>Map</h2>
-					<a href="https://goo.gl/maps/mwea2ZBF81K2"><img src="images/map.png" width="100%" height="auto"></a>
-				</li>
-			</ul>
-		</div>
-	</section>
 
 		<!-- Two -->
+		<!--
 			<section id="Accommodations" class="wrapper style2 align-center">
 				<div class="container">
 					<header>
@@ -161,43 +285,20 @@
 					</footer>
 				</div>
 			</section>
+		-->
+
 
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
 					<div class="row">
-						<section class="4u 6u(medium) 12u$(small)">
+						<section class="6u 6u(medium) 12u$(small)">
 							<h3>Lorem ipsum</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cumque!</p>
 						</section>
-						<section class="4u 6u$(medium) 12u$(small)">
+						<section class="6u 6u$(medium) 12u$(small)">
 							<h3>Nostrum, repellat!</h3>
 							<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
-						</section>
-						<section class="4u$ 12u$(medium) 12u$(small)">
-							<h3>Contact Us</h3>
-							<ul class="icons">
-								<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
-								<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="tabular">
-								<li>
-									<h3>Address</h3>
-									1234 Somewhere Road<br>
-									Nashville, TN 00000
-								</li>
-								<li>
-									<h3>Mail</h3>
-									<a href="#">someone@untitled.tld</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									(000) 000-0000
-								</li>
-							</ul>
 						</section>
 					</div>
 				</div>
