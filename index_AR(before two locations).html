@@ -81,72 +81,136 @@
 			</section>
 			<br>
 
-
+			<!-- Ceremony -->
+			<!--
+			<section id="Ceremony" class="wrapper align-center">
+				<div class="container">
+					<header>
+						<h2>This is just a start ... I can change, add or delete anything.</h2>
+						<p>Just give a me a drawing and don't restrict yourself to this look. I can reshape</p>
+					</header>
+					<div class="row 200%">
+						<section class="4u 22u$(small)">
+							<a><img src="images/ceremony.jpg" width="100%" height="auto"></a>
+							<p>الاستقبال</p>
+						</section>
+						<section class="4u 22u$(small)">
+							<a><img src="images/dinner.jpg" width="100%" height="auto"></a>
+							<p>العشاء</p>
+						</section>
+						<section class="4u$ 22u$(small)">
+							<a><img src="images/dinner2.jpg" width="100%" height="auto"></a>
+							<p>الرقص</p>
+						</section>
+					</div>
+				</div>
+			</section>
+		-->
 
 		<!-- Map -->
 
-						<section id="MapLocation" class="wrapper style2 align-center">
-							<div class="container">
-								<header>
-									<h2>Location</h2>
-								</header>
-								<div class="row">
-									<section class="6u 12u$(small)">
-										<img src="images/boat.jpg" width="100%" height="auto">
-									</section>
-									<section class="6u 12u$(small)">
-										<img src="images/hotel.jpg" width="100%" height="auto">
-									</section>
-								</div>
-								<br>
-								<div class="row">
-									<section class="12u 12u$(small)">
-										<div id="boat"></div>
-											<script>
-											function initMap() {
-												var boat = {lat: 41.113423, lng: 29.060978};
-												var ajia = {lat: 41.1031317, lng: 29.066867199999933};
-												var boat_map = new google.maps.Map(document.getElementById('boat'), {
-													zoom: 12,
-													center: boat
-												});
-												var boat_marker = new google.maps.Marker({
-													position: boat,
-													map: boat_map,
-													label: 'القارب'
-												});
-												var ajia_marker = new google.maps.Marker({
-													position: ajia,
-													map: boat_map,
-													label: 'فندق أجيا'
-												});
-											}
-											</script>
-								<script async defer
-								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOUbo4cQysb_PBPfnL0aFYsFPECOZfxnc&callback=initMap">
-								</script>
-							</section>
-
-							<section>
-								<style class="wrapper">
-									#boat {
-										height: 100%;
-										width: 100%;
-										background-color: grey;
-										margin-left: 10px;
-										margin-right: 10px;
-										overflow: hidden;
-										padding-bottom: 62%;
-										padding-top: 10px;
-										padding-left: 10px;
-										padding-right: 10px;
-										position: relative;
+		<section id="MapLocation" class="wrapper style2 align-center">
+			<div class="container">
+				<header>
+					<h2>الموقع</h2>
+				</header>
+				<div class="row">
+					<section class="6u 12u$(small)">
+						<img src="images/hotel.jpg" width="100%" height="auto">
+					</section>
+					<section class="6u 12u$(small)">
+								<div id="map"></div>
+									<script>
+									function initMap() {
+										var ajia = {lat: 41.1031317, lng: 29.066867199999933};
+										var map = new google.maps.Map(document.getElementById('map'), {
+											zoom: 12,
+											center: ajia
+										});
+										var marker = new google.maps.Marker({
+											position: ajia,
+											map: map
+										});
 									}
-									</style>
-									</section>
-								</div>
-							</div>
-						</section>
+									</script>
+						<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzBMn9j2IDjwb6hWgwvs931Nn34xNFLSY&callback=initMap">
+						</script>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<style class="wrapper">
+				#map {
+					height: 100%;
+					width: 100%;
+					background-color: grey;
+					margin-left: 10px;
+					margin-right: 10px;
+					overflow: hidden;
+					padding-bottom: 62%;
+					padding-top: 10px;
+					padding-left: 10px;
+					padding-right: 10px;
+					position: relative;
+				}
+			</style>
+		</section>
+
+
+		<!--
+		<section>
+		<style class="wrapper">
+			#map {
+				height: 0;
+				width: 100%;
+				background-color: grey;
+				margin-left: auto;
+				margin-right: auto;
+				overflow: hidden;
+				padding-bottom: 22.25%;
+				padding-top: 30px;
+				position: relative;
+			}
+	  </section>
+	  <section id="MapLocation" class="align-center">
+	    <h2>الموقع</h2>
+	    <div id="map"></div>
+			<script>
+      function initMap() {
+        var ajia = {lat: 41.1031317, lng: 29.066867199999933};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: ajia
+        });
+        var marker = new google.maps.Marker({
+          position: ajia,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzBMn9j2IDjwb6hWgwvs931Nn34xNFLSY&callback=initMap">
+    </script>
+	</section>
+
+<!-
+<section id="MapLocation" class="wrapper align-center">
+	<div class="container">
+		<div class="row">
+			<section class="6u 12u$(small)">
+				<h2>Ceremony</h2>
+			</section>
+			<section class="6u 12u$(small)">
+				<h2>الموقع</h2>
+				<a href="https://goo.gl/maps/mwea2ZBF81K2"><img src="images/map.png" width="90%" height="auto"></a>
+			</section>
+		</div>
+	</div>
+</section>
+-->
 
 	<!-- Accommodations -->
 		<section id="Accommodations" class="wrapper style2 align-center">
